@@ -17,11 +17,11 @@ A naive application that can do some rudimentary grinding to level up Jobs in Fi
 ## Configure game settings
 * Resolution: 800x600 @ 60Hz
 * Fullscreen: Must be unticked
-![FF3-Settings Example](https://github.com/gearsoflaw/FF3-Job-Grinder/blob/media/ff3-settings.jpg)
+![FF3-Settings Example](../media/ff3-settings.jpg?raw=true)
 
 ## Position Screen
 * Place the screen in the top left of the screen
-![FF3-Screen-Position Example](https://github.com/gearsoflaw/FF3-Job-Grinder/blob/media/ff3-screen-position.jpg)
+![FF3-Screen-Position Example](../media/ff3-screen-position.jpg?raw=true)
 
 ### Hint
 It is important to place the window correctly to ensure that when the application is reading in the images it can see the game.
