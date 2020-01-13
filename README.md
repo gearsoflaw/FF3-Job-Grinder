@@ -28,10 +28,16 @@ Built using Python 3.7.3
 ### Hint
 It is important to place the window correctly to ensure that when the application is reading in the images it can see the game.
 * In `ff3_consts_running.py` you can set `SHOW_SCREEN` to `True`, this will draw a window showing you exactly what the application is seeing, this window needs to be a mirror of what is happening in the game window.
+![FF3-With-Screen-Show Example](../media/ff3-with-screen-show.jpg?raw=true)
 
 ## Run the script
 * To run the script execute `ff3_job_leveling.py`
 * A short count down will initiate giving you time to change focus to the game window
+* Once running your character will begin pacing right and left until an enemy is encountered
+* In the battle the each character will guard/steal/study etc. as many turns as set for `GRIND_ROUNDS`
+* Once grinding in the battle is complete Attack commands will be issued until the Fanfare screen appears
+* The Fanfare screen will automatically be processed
+* Once back on the world screen, it all starts again
 
 ## Best place to Grind
 In the forest just south of Ur.
