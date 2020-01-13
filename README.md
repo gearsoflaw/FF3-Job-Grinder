@@ -2,6 +2,8 @@
 A naive application that can do some rudimentary grinding to level up Jobs in Final Fantasy 3 (Steam)
 
 # Getting Started
+Built using Python 3.7.3
+
 ## Required Python Modules
 * OpenCv
 ..* https://pypi.org/project/opencv-python/
@@ -27,6 +29,10 @@ A naive application that can do some rudimentary grinding to level up Jobs in Fi
 It is important to place the window correctly to ensure that when the application is reading in the images it can see the game.
 * In `ff3_consts_running.py` you can set `SHOW_SCREEN` to `True`, this will draw a window showing you exactly what the application is seeing, this window needs to be a mirror of what is happening in the game window.
 
+## Run the script
+* To run the script execute `ff3_job_leveling.py`
+* A short count down will initiate giving you time to change focus to the game window
+
 ## Best place to Grind
 In the forest just south of Ur.
 
@@ -40,7 +46,7 @@ i.e. a Thief does not have a Guard command, which means a Thief needs to perform
 For example: If you were to have Arc in character position 2 and he was a Thief and the other 3 characters were Warriors you would need to setup the `GRIND_CMD` such that the characters 1, 3 and 4 perform the standard grind action `CMD_STD_GRIND` while the character in position 2 is setup for the special steal command `CMD_SP_STEAL`:
 * `GRIND_CMD = {CHAR_1: CMD_STD_GRIND, CHAR_2: CMD_SP_STEAL, CHAR_3: CMD_STD_GRIND, CHAR_4: CMD_STD_GRIND}`
 
-You can also alter how many rounds to 'Grind' for before the attack commands get issued by changing the value for `GRIND_ROUNDS` which is set to 6 by default, this means on round 6 the Attack commands will begin.
+You can also alter how many rounds to 'Grind' for before the attack commands get issued by changing the value for `GRIND_ROUNDS` which is set to 6 by default, this means after 6 grind actions the Attack commands will begin.
 
 # Other Helpful Links
 
@@ -55,9 +61,9 @@ Upon discovery of the amount of time to legitimately grind to level all Jobs up 
 
 I personally do not believe in the point of using trainers or cheat engine as tools of convenience to unlock achievements, what I do believe though is to invest the effort to learn a new skill and grow my own skill set as a developer!
 
-So with this tool, I can setup my characters and then run the script while I spend some time doing other more constructive things with my life, without feeling guilty that this could be considered 'cheating'. I have invested the effort to gain real life skills to unlock this convenience.
+With this tool, I can setup my characters and then run the script while I spend some time doing other more constructive things with my life, without feeling guilty that this could be considered 'cheating'. I have invested the effort to gain real life skills to unlock this convenience.
 
-Creating a trainer may have been considered more efficient to accomplish this, but, it does not fulfil my own desire to learn, taking the first step in understanding image processing and getting input commands to work is simple and gives me a foundation to tackle other challenges in games as well as a precurser to machine learning.
+Creating a trainer may have been considered more efficient to accomplish this, but, it does not fulfil my own desire to learn. This approach for me was taking the first step in understanding image processing, getting input commands to work and learning Python. It also gives me a foundation to tackle other future challenges in games as well as a precurser to machine learning.
 
 # Acknowledgments
 Sentdex: https://pythonprogramming.net/direct-input-game-python-plays-gta-v/
